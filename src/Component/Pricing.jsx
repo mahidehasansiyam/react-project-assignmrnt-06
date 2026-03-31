@@ -1,10 +1,10 @@
 import React from 'react';
+import { FaCheck } from 'react-icons/fa6';
 
 const Pricing = () => {
   return (
     <section className="bg-white py-20 px-6 font-sans">
       <div className="max-w-7xl mx-auto text-center">
-        
         <h2 className="text-4xl md:text-5xl font-bold text-[#1E293B] mb-4">
           Simple, Transparent Pricing
         </h2>
@@ -12,7 +12,6 @@ const Pricing = () => {
           Choose the plan that fits your needs. Upgrade or downgrade anytime.
         </p>
 
-        
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
           {/* first card */}
           <div className="bg-[#F8FAFC] rounded-[2.5rem] p-10 border border-gray-100 flex flex-col text-left h-full">
@@ -27,17 +26,17 @@ const Pricing = () => {
             </div>
 
             <ul className="space-y-4 mb-12 flex-grow">
-              <li className="flex items-center text-gray-600 text-sm">
-                 Access to 10 free tools
+              <li className="flex items-center text-gray-600 text-sm gap-2">
+                <FaCheck /> Access to 10 free tools
               </li>
-              <li className="flex items-center text-gray-600 text-sm">
-                 Basic templates
+              <li className="flex items-center text-gray-600 text-sm gap-2">
+                <FaCheck /> Basic templates
               </li>
-              <li className="flex items-center text-gray-600 text-sm">
-                 Community support
+              <li className="flex items-center text-gray-600 text-sm gap-2">
+                <FaCheck /> Community support
               </li>
-              <li className="flex items-center text-gray-600 text-sm">
-                 1 project per month
+              <li className="flex items-center text-gray-600 text-sm gap-2">
+                <FaCheck /> 1 project per month
               </li>
             </ul>
 
@@ -46,9 +45,8 @@ const Pricing = () => {
             </button>
           </div>
 
-           {/* pro card */}
+          {/* pro card */}
           <div className="bg-[#7C3AED] rounded-[2.5rem] p-10 flex flex-col text-left relative  shadow-2xl shadow-purple-200">
-            
             <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#FEF3C7] text-[#92400E] px-4 py-1 rounded-full text-xs font-bold whitespace-nowrap border border-[#FDE68A]">
               Most Popular
             </div>
@@ -64,24 +62,23 @@ const Pricing = () => {
             </div>
 
             <ul className="space-y-4 mb-12 flex-grow">
-              <li className="flex items-center text-white text-sm">
-                 Access to all premium
-                tools
+              <li className="flex items-center text-white text-sm gap-2">
+                <FaCheck /> Access to all premium tools
               </li>
-              <li className="flex items-center text-white text-sm">
-                 Unlimited templates
+              <li className="flex items-center text-white text-sm gap-2">
+                <FaCheck /> Unlimited templates
               </li>
-              <li className="flex items-center text-white text-sm">
-                 Priority support
+              <li className="flex items-center text-white text-sm gap-2">
+                <FaCheck /> Priority support
               </li>
-              <li className="flex items-center text-white text-sm">
-                 Unlimited projects
+              <li className="flex items-center text-white text-sm gap-2">
+                <FaCheck /> Unlimited projects
               </li>
-              <li className="flex items-center text-white text-sm">
-                 Cloud sync
+              <li className="flex items-center text-white text-sm gap-2">
+                <FaCheck /> Cloud sync
               </li>
-              <li className="flex items-center text-white text-sm">
-                 Advanced analytics
+              <li className="flex items-center text-white text-sm gap-2">
+                <FaCheck /> Advanced analytics
               </li>
             </ul>
 
@@ -105,24 +102,23 @@ const Pricing = () => {
             </div>
 
             <ul className="space-y-4 mb-12 flex-grow">
-              <li className="flex items-center text-gray-600 text-sm">
-                 Everything in Pro
+              <li className="flex items-center text-gray-600 text-sm gap-2">
+                <FaCheck /> Everything in Pro
               </li>
-              <li className="flex items-center text-gray-600 text-sm">
-                 Team collaboration
+              <li className="flex items-center text-gray-600 text-sm gap-2">
+                <FaCheck /> Team collaboration
               </li>
-              <li className="flex items-center text-gray-600 text-sm">
-                 Custom
-                integrations
+              <li className="flex items-center text-gray-600 text-sm gap-2">
+                <FaCheck /> Custom integrations
               </li>
-              <li className="flex items-center text-gray-600 text-sm">
-                 Dedicated support
+              <li className="flex items-center text-gray-600 text-sm gap-2">
+                <FaCheck /> Dedicated support
               </li>
-              <li className="flex items-center text-gray-600 text-sm">
-                 SLA guarantee
+              <li className="flex items-center text-gray-600 text-sm gap-2">
+                <FaCheck /> SLA guarantee
               </li>
-              <li className="flex items-center text-gray-600 text-sm">
-                 Custom branding
+              <li className="flex items-center text-gray-600 text-sm gap-2">
+                <FaCheck /> Custom branding
               </li>
             </ul>
 

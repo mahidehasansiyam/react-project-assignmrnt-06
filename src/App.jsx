@@ -6,6 +6,7 @@ import Navbar from './Component/Navbar'
 import Pricing from './Component/Pricing'
 import Stats from './Component/Stats'
 import Steps from './Component/Steps'
+import Workflow from './Component/Workflow'
 
 const dataloading = async () => {
   let res = await fetch("/data.json")
@@ -24,6 +25,7 @@ function App() {
       <Main dataPromise={dataPromise}></Main>
       <Steps></Steps>
       <Pricing></Pricing>
+      <Workflow></Workflow>
     </>
   );
 }

@@ -1,7 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { LiaArrowRightSolid } from 'react-icons/lia';
+import { toast } from 'react-toastify';
 
-const ProductCart = ({item}) => {
+const ProductCart = ({ item,click,setClick,cart,setCart }) => {
+  
+  
+  const clicked = (item) => {
+    setClick(true)
+    if (cart.find(i => i.id === item.id)) {
+      toast.error("Already added to cart")
+      return;
+    }
+    setCart([...cart,item]) 
+
+  }
+  
+
   return (
     <div>
       <div className="bg-white rounded-3xl p-8 shadow-sm border border-gray-100 flex flex-col relative hover:shadow-md transition-shadow mb-20">
@@ -40,15 +54,18 @@ const ProductCart = ({item}) => {
         {/* Features */}
         <ul className="space-y-4 mb-8 flex-grow">
           {item.features.map((feature, index) => (
-            <li key={index} className="flex items-center text-sm text-gray-600">
-              
+            <li key={index} className="flex items-center gap-2 text-sm text-gray-600">
               <LiaArrowRightSolid />
               {feature}
             </li>
           ))}
         </ul>
 
-        <button className="w-full py-4 bg-[#7C3AED] hover:bg-[#6D28D9] text-white font-bold rounded-2xl transition-all active:scale-[0.98]">
+        <button 
+          onClick={()=>clicked(item)}
+          className="w-full py-4 bg-[#7C3AED] hover:bg-[#6D28D9] text-white font-bold rounded-2xl transition-all active:scale-[0.98]"
+          
+        >
           Buy Now
         </button>
       </div>

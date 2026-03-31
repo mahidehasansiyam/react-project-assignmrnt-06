@@ -4,7 +4,7 @@ import { LiaArrowRightSolid } from 'react-icons/lia';
 const ProductCart = ({item}) => {
   return (
     <div>
-      <div className="bg-white rounded-3xl p-8 shadow-sm border border-gray-100 flex flex-col relative hover:shadow-md transition-shadow">
+      <div className="bg-white rounded-3xl p-8 shadow-sm border border-gray-100 flex flex-col relative hover:shadow-md transition-shadow mb-20">
         {item.tag ? (
           <span
             className={`absolute top-6 right-6 px-3 py-1 rounded-full text-xs font-bold ${

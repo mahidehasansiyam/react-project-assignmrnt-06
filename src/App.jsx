@@ -21,7 +21,7 @@ function App() {
       <Banner></Banner>
       <Stats></Stats>
       <Main dataPromise={dataPromise}></Main>
-      {/* <Steps></Steps> */}
+      <Steps></Steps>
     </>
   );
 }

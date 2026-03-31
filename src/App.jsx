@@ -7,6 +7,7 @@ import Pricing from './Component/Pricing'
 import Stats from './Component/Stats'
 import Steps from './Component/Steps'
 import Workflow from './Component/Workflow'
+import Footer from './Footer'
 
 const dataloading = async () => {
   let res = await fetch("/data.json")
@@ -26,6 +27,7 @@ function App() {
       <Steps></Steps>
       <Pricing></Pricing>
       <Workflow></Workflow>
+      <Footer></Footer>
     </>
   );
 }

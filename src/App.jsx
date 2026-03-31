@@ -3,6 +3,7 @@ import './App.css'
 import Banner from './Component/Banner'
 import Main from './Component/Main'
 import Navbar from './Component/Navbar'
+import Pricing from './Component/Pricing'
 import Stats from './Component/Stats'
 import Steps from './Component/Steps'
 
@@ -22,6 +23,7 @@ function App() {
       <Stats></Stats>
       <Main dataPromise={dataPromise}></Main>
       <Steps></Steps>
+      <Pricing></Pricing>
     </>
   );
 }
